@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="eggplaint_brownie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex: macarrão" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3yN-X2-ZMG">
+                                <rect key="frame" x="188" y="88" width="206" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="206" id="QrY-k4-TuR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex: 1 triste - 5 muito feliz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="woJ-y3-R3g">
+                                <rect key="frame" x="188" y="130" width="206" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="206" id="tWu-aZ-r6g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOR-cy-RX1">
+                                <rect key="frame" x="20" y="220" width="374" height="30"/>
+                                <state key="normal" title="Adicionar"/>
+                                <connections>
+                                    <action selector="adicionar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fIv-Iq-ORx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Felicidade:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jl4-iZ-8xs">
+                                <rect key="frame" x="20" y="137" width="160" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOG-gX-yvb">
+                                <rect key="frame" x="20" y="97" width="160" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="woJ-y3-R3g" firstAttribute="leading" secondItem="jl4-iZ-8xs" secondAttribute="trailing" constant="8" id="1FV-Os-njl"/>
+                            <constraint firstItem="jl4-iZ-8xs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AfJ-Ig-dqH"/>
+                            <constraint firstItem="GOR-cy-RX1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ar2-RG-5g3"/>
+                            <constraint firstItem="TOG-gX-yvb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="IBL-DZ-F7I"/>
+                            <constraint firstItem="3yN-X2-ZMG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="NLq-ky-OPV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="woJ-y3-R3g" secondAttribute="trailing" constant="20" id="PNs-pg-efq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GOR-cy-RX1" secondAttribute="trailing" constant="20" id="fX8-ab-LC1"/>
+                            <constraint firstAttribute="trailing" secondItem="3yN-X2-ZMG" secondAttribute="trailing" constant="20" id="fth-sE-dAr"/>
+                            <constraint firstItem="GOR-cy-RX1" firstAttribute="top" secondItem="woJ-y3-R3g" secondAttribute="bottom" constant="56" id="fxH-4l-aHT"/>
+                            <constraint firstItem="woJ-y3-R3g" firstAttribute="top" secondItem="3yN-X2-ZMG" secondAttribute="bottom" constant="8" id="gPl-TY-Gyl"/>
+                            <constraint firstItem="TOG-gX-yvb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jed-iw-7rN"/>
+                            <constraint firstItem="jl4-iZ-8xs" firstAttribute="top" secondItem="TOG-gX-yvb" secondAttribute="bottom" constant="19" id="s5g-J1-lbY"/>
+                            <constraint firstItem="3yN-X2-ZMG" firstAttribute="leading" secondItem="TOG-gX-yvb" secondAttribute="trailing" constant="8" id="ylC-Sq-zKb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="felicidadeTextField" destination="woJ-y3-R3g" id="gxW-cR-5Se"/>
+                        <outlet property="nomeTextField" destination="3yN-X2-ZMG" id="YZN-Z8-j38"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242" y="125"/>
+        </scene>
+    </scenes>
+</document>

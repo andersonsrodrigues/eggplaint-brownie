@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EC6620623EF7EC400CEE052 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6620523EF7EC400CEE052 /* Refeicao.swift */; };
+		9EC6620823EF7F7A00CEE052 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6620723EF7F7A00CEE052 /* Item.swift */; };
 		9ECBB61D23EDFA02009DD156 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECBB61C23EDFA02009DD156 /* AppDelegate.swift */; };
 		9ECBB61F23EDFA02009DD156 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECBB61E23EDFA02009DD156 /* SceneDelegate.swift */; };
 		9ECBB62123EDFA02009DD156 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECBB62023EDFA02009DD156 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9EC6620523EF7EC400CEE052 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
+		9EC6620723EF7F7A00CEE052 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9ECBB61923EDFA02009DD156 /* eggplaint-brownie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eggplaint-brownie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ECBB61C23EDFA02009DD156 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ECBB61E23EDFA02009DD156 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9EC6620923EF802900CEE052 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9EC6620523EF7EC400CEE052 /* Refeicao.swift */,
+				9EC6620723EF7F7A00CEE052 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9EC6620A23EF805900CEE052 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9ECBB62023EDFA02009DD156 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9EC6620B23EF806800CEE052 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9ECBB62723EDFA06009DD156 /* LaunchScreen.storyboard */,
+				9ECBB62223EDFA02009DD156 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9ECBB61023EDFA02009DD156 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +88,10 @@
 			children = (
 				9ECBB61C23EDFA02009DD156 /* AppDelegate.swift */,
 				9ECBB61E23EDFA02009DD156 /* SceneDelegate.swift */,
-				9ECBB62023EDFA02009DD156 /* ViewController.swift */,
-				9ECBB62223EDFA02009DD156 /* Main.storyboard */,
+				9EC6620923EF802900CEE052 /* Models */,
+				9EC6620B23EF806800CEE052 /* Views */,
+				9EC6620A23EF805900CEE052 /* Controllers */,
 				9ECBB62523EDFA06009DD156 /* Assets.xcassets */,
-				9ECBB62723EDFA06009DD156 /* LaunchScreen.storyboard */,
 				9ECBB62A23EDFA06009DD156 /* Info.plist */,
 			);
 			path = "eggplaint-brownie";
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC6620823EF7F7A00CEE052 /* Item.swift in Sources */,
 				9ECBB62123EDFA02009DD156 /* ViewController.swift in Sources */,
 				9ECBB61D23EDFA02009DD156 /* AppDelegate.swift in Sources */,
 				9ECBB61F23EDFA02009DD156 /* SceneDelegate.swift in Sources */,
+				9EC6620623EF7EC400CEE052 /* Refeicao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +316,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "eggplaint-brownie/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,6 +325,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.anderson.eggplaint-brownie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,7 +335,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "eggplaint-brownie/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +344,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.anderson.eggplaint-brownie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
